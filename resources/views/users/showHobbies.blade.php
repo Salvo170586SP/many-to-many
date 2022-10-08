@@ -14,12 +14,12 @@
                     @method('GET')
                     <input type="hidden" name="user_id" value="{{ $user->id }}">
                     <label>Inserisci hobbies</label>
-                    <select class="form-select" id="floatingSelect" name="hobby_id" aria-label="Floating label select example">
+                    <select class="form-select" id="floatingSelect" name="hobby_id"
+                        aria-label="Floating label select example">
                         @foreach ($hobbiesOff as $hobby)
                             <option value="{{ $hobby->id }}">{{ $hobby->name }}</option>
                         @endforeach
                     </select>
-
                     <button class="btn btn-sm btn-primary my-3" type="submit">Inserisci</button>
                 </form>
             </div>
